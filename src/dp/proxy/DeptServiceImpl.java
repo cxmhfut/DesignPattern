@@ -5,4 +5,8 @@ public class DeptServiceImpl implements DeptService{
     public void remove() {
         System.out.println("----- remove -----");
     }
+
+    public void delete(){
+        System.out.println("----- delete -----");
+    }
 }

@@ -38,7 +38,7 @@ public class Client {
     }
 
     @Test
-    public void cglibProxy(){
+    public void testCGLIBProxy(){
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(UserServiceImpl.class);
         enhancer.setCallback(new MethodInterceptor() {
@@ -54,5 +54,16 @@ public class Client {
         UserServiceImpl userService = (UserServiceImpl) enhancer.create();
         userService.add();
         userService.update();
+    }
+
+    @Test
+    public void testCGLIBProxyBuilder(){
+        CGLIBProxyBuilder builder = new CGLIBProxyBuilder();
+        UserServiceImpl userProxy = (UserServiceImpl) builder.bind(UserServiceImpl.class);
+        DeptServiceImpl deptProxy = (DeptServiceImpl) builder.bind(DeptServiceImpl.class);
+        userProxy.add();
+        userProxy.update();
+        deptProxy.remove();
+        deptProxy.delete();
     }
 }
