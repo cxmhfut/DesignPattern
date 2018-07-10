@@ -1,7 +1,7 @@
 package dp.builder;
 
 public abstract class CarBuilder implements Builder {
-    Car car;
+    private Car car;
 
     CarBuilder() {
         car = new Car();
