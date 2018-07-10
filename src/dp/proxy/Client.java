@@ -32,8 +32,19 @@ public class Client {
     public void proxyTestV2(){
         MyInvocationHandler_V2 invocationHandler = new MyInvocationHandler_V2();
         UserService userProxy = (UserService) invocationHandler.bind(new UserServiceImpl());
-        DeptService deptProxy = (DeptService) invocationHandler.bind(new DeptServiceImpl());
         userProxy.add();
+        DeptService deptProxy = (DeptService) invocationHandler.bind(new DeptServiceImpl());
+        invocationHandler.setMethodCallBack(new MyInvocationHandler_V2.MethodCallBack() {
+            @Override
+            public void before() {
+                System.out.println("before");
+            }
+
+            @Override
+            public void after() {
+                System.out.println("after");
+            }
+        });
         deptProxy.remove();
     }
 
