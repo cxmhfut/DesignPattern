@@ -5,9 +5,6 @@ public abstract class CarBuilder implements Builder {
 
     CarBuilder() {
         car = new Car();
-        buildEngine();
-        buildSteer();
-        buildWheel();
     }
 
     @Override
