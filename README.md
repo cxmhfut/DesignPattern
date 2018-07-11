@@ -107,14 +107,88 @@ Car{engine='4WheelCarEngine', steer='4WheelCarSteer', wheel=4}
 
 ## 5 Template模式
 
+模板模式
+
+[template_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/template)
+
+- 运行结果
+```
+Basketball Game:initialize...
+Basketball Game:start...
+Basketball Game:end...
+Football Game:initialize...
+Football Game:start...
+Football Game:end...
+```
+
 ## 6 Decorator模式
+
+装饰模式
+
+[decorator_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/decorator)
+
+- 运行结果
+```
+Draw:TextView
+Scroll to:0
+Border width:100
+```
 
 ## 7 Observer模式
 
+观察者模式
+
+[observer_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/observer)
+
+- 运行结果
+```
+Student A received paper:体育周刊
+Student B received paper:体育周刊
+Student C received paper:体育周刊
+Student A received paper:学术人生
+Student B received paper:学术人生
+```
+
 ## 8 Response Chain模式
+
+职责链模式
+
+[responsechain_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/responsechain)
+
+- 运行结果
+```
+HR Manager:Request{day=5, reason='病假'}
+Project Manager:Request{day=2, reason='事假'}
+General Manager:Request{day=15, reason='出差'}
+```
 
 ## 9 Adapter模式
 
+适配器模式
+
+[adapter_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/adapter)
+
+- 运行结果
+```
+Playing MP4 file. Name:alone.mp4
+Playing Vlc file. Name:far far away.vlc
+Invalid audio type.
+```
+
 ## 10 Bridge模式
 
+桥接模式
+
+[bridge_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/bridge)
+
+- 运行结果
+```
+Drawing Circle[color:red, radius:5, x:0, y:0]
+Drawing Circle[color:green, radius:3, x:0, y:0]
+```
+
 ## 11 Proxy模式
+
+代理模式
+
+[proxy_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/proxy)
