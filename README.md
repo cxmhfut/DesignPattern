@@ -75,7 +75,56 @@ public class Singleton2 {
 
 ![dp_builder](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_builder.png)
 
+
+
+```
+Building Engine...
+Building Steer...
+Building Wheel...
+Building Engine...
+Building Steer...
+Building Wheel...
+Car{engine='2WheelCarEngine', steer='2WheelCarSteer', wheel=2}
+Car{engine='4WheelCarEngine', steer='4WheelCarSteer', wheel=4}
+```
+
+- Car2WheelBuilder.java
+
+```java
+public class Car2WheelBuilder extends CarBuilder {
+
+    @Override
+    public void buildEngine() {
+        System.out.println("Building Engine...");
+        getResult().setEngine("2WheelCarEngine");
+    }
+
+    @Override
+    public void buildSteer() {
+        System.out.println("Building Steer...");
+        getResult().setSteer("2WheelCarSteer");
+    }
+
+    @Override
+    public void buildWheel() {
+        System.out.println("Building Wheel...");
+        getResult().setWheel(2);
+    }
+}
+```
+
 ## 4 Strategy模式
+
+策略模式
+
+[code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/strategy)
+
+```
+春季促销活动
+夏季促销活动
+秋季促销活动
+冬季促销活动
+```
 
 ## 5 Template模式
 
