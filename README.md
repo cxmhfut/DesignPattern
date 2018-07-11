@@ -125,6 +125,8 @@ Football Game:end...
 
 装饰模式
 
+![dp_decorator](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_decorator.png)
+
 [decorator_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/decorator)
 
 - 运行结果
@@ -137,6 +139,8 @@ Border width:100
 ## 7 Observer模式
 
 观察者模式
+
+![dp_observer](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_observer.png)
 
 [observer_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/observer)
 
@@ -153,6 +157,8 @@ Student B received paper:学术人生
 
 职责链模式
 
+![dp_responsechain](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_responsechain.png)
+
 [responsechain_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/responsechain)
 
 - 运行结果
@@ -165,6 +171,8 @@ General Manager:Request{day=15, reason='出差'}
 ## 9 Adapter模式
 
 适配器模式
+
+![dp_adapter](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_adapter.png)
 
 [adapter_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/adapter)
 
