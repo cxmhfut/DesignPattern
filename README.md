@@ -69,14 +69,17 @@ public class Singleton2 {
 
 工厂模式
 
+[factory_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/factory)
+
 ## 3 Builder模式
 
 生成器模式
 
 ![dp_builder](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_builder.png)
 
+[builder_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/builder)
 
-
+- 运行结果
 ```
 Building Engine...
 Building Steer...
@@ -88,37 +91,13 @@ Car{engine='2WheelCarEngine', steer='2WheelCarSteer', wheel=2}
 Car{engine='4WheelCarEngine', steer='4WheelCarSteer', wheel=4}
 ```
 
-- Car2WheelBuilder.java
-
-```java
-public class Car2WheelBuilder extends CarBuilder {
-
-    @Override
-    public void buildEngine() {
-        System.out.println("Building Engine...");
-        getResult().setEngine("2WheelCarEngine");
-    }
-
-    @Override
-    public void buildSteer() {
-        System.out.println("Building Steer...");
-        getResult().setSteer("2WheelCarSteer");
-    }
-
-    @Override
-    public void buildWheel() {
-        System.out.println("Building Wheel...");
-        getResult().setWheel(2);
-    }
-}
-```
-
 ## 4 Strategy模式
 
 策略模式
 
-[code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/strategy)
+[strategy_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/strategy)
 
+- 运行结果
 ```
 春季促销活动
 夏季促销活动
