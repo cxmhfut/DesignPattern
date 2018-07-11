@@ -26,9 +26,54 @@ Sub Class Constructor init.
 
 ## 1 Singleton模式
 
+单例模式
+
+- 1 饿汉式单例模式
+
+```java
+/**
+ * 饿汉式单例模式创建
+ */
+public class Singleton1 {
+    private static Singleton1 instance = new Singleton1();
+
+    public static Singleton1 getInstance(){
+        return instance;
+    }
+}
+```
+- 2 懒汉式单例模式创建
+
+```java
+/**
+ * 懒汉式单例模式创建
+ */
+public class Singleton2 {
+    private static Singleton2 instance;
+
+    public static Singleton2 getInstance() {
+        if (instance == null) {
+            synchronized (Singleton2.class) {
+                if (instance == null) {
+                    instance = new Singleton2();
+                }
+            }
+        }
+
+        return instance;
+    }
+}
+```
+
 ## 2 Factory模式
 
+工厂模式
+
 ## 3 Builder模式
+
+生成器模式
+
+[dp_builder]()
 
 ## 4 Strategy模式
 
