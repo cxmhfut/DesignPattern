@@ -73,7 +73,7 @@ public class Singleton2 {
 
 生成器模式
 
-[dp_builder]()
+![dp_builder](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_builder.png)
 
 ## 4 Strategy模式
 
