@@ -228,6 +228,15 @@ Student B received paper:学术人生
 
 职责链模式
 
+Chain of Responsibility(CoR)职责链模式，CoR模式是用一系列（classes）去处理一个请求request，
+这些类之间是一个松散的耦合，唯一共同点是在他们之间传递request，也就是说，来了一个请求，
+A类先处理，如果没有处理，就传递到B类处理，如果没有处理，就传递到C类处理，
+就这样像一个链条一样传递下去处理一个request。
+
+- 优点：因为无法预知来自外界（客户端）的请求是属于哪种类型，每个类如果碰到它不能处理的请求只要放弃就可以。
+- 缺点：效率低，因为一个请求的完成可能要遍历到最后才能完成；扩展性差，因为在CoR中，
+一定要有一个统一的接口Handler，局限性就在这里。
+
 ![dp_responsechain](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_responsechain.png)
 
 [responsechain_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/responsechain)
