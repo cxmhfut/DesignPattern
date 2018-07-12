@@ -166,6 +166,32 @@ Football Game:end...
 
 装饰模式
 
+<h4>意图</h4>
+
+动态地给一个对象一些额外的职责，就增加功能来说，Decorator模式相比生成子类更为灵活
+
+<h4>适用性</h4>
+
+- 在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。
+- 当不能采用生成子类的方法进行扩充时。
+- 一种情况是，可能有大量独立的扩展，为支持每一种组合将产生大量的子类，
+使得子类数目呈爆炸性增长。
+- 另一种情况可能是因为类定义被隐藏，或类定义不能用于生成子类。
+
+<h4>效果</h4>
+
+- Decorator比静态继承更灵活；
+- Decorator避免在层次结构高层的类中有太多的特征；
+- Decorator不等同于它所装饰的对象；
+- 可能产生很多小对象
+
+<h4>实现</h4>
+
+- 装饰对象应该与被装饰组件保持一致的接口（互相嵌套装饰），即组件的所有装饰实现类拥有相同的父类；
+- 当只有一个装饰实现类是，可以省略装饰抽象类；
+- 组件与装饰拥有相同的父类，应保持父类的简单性；
+- 装饰可以用于改变组件的外观，而不能改变组件的内核；
+
 ![dp_decorator](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_decorator.png)
 
 [decorator_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/decorator)
@@ -180,6 +206,10 @@ Border width:100
 ## 7 Observer模式
 
 观察者模式
+
+观察者模式（有时又被成为发布/订阅模式）是软件设计模式的一种。在此种模式中，
+一个被观察者（消息主体）管理所有依赖于它的观察者，并且在它本身的状态改变时主动发出通知（其实就是调用观察者的相关方法）。
+此种模式通常被用来作事件处理系统。
 
 ![dp_observer](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_observer.png)
 
