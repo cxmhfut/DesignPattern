@@ -101,6 +101,11 @@ public class Singleton2 {
 
 生成器模式
 
+- 将一个复杂对象与其表象分离，使得同样的构建过程可以创建不同的对象表示
+- 在工厂模式里，我们无需关心产品的各部分是如何被创建的；但在Builder模式里，
+会把产品的创建过程抽象为多个部分。也就是说，工厂模式被关注的是整个产品，
+而Builder模式被关注的是产品的组成部分的创建过程。
+
 ![dp_builder](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_builder.png)
 
 [builder_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/builder)
@@ -121,6 +126,8 @@ Car{engine='4WheelCarEngine', steer='4WheelCarSteer', wheel=4}
 
 策略模式
 
+- 定义了一系列的算法，并将每个算法封装起来，而且使他们还可以相互替换。策略模式让算法独立于使用它的客户而独立变化。
+
 [strategy_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/strategy)
 
 - 运行结果
@@ -134,6 +141,14 @@ Car{engine='4WheelCarEngine', steer='4WheelCarSteer', wheel=4}
 ## 5 Template模式
 
 模板模式
+
+该模式的核心思想是：固定整体框架和流程整体上的稳定性、可重用性，
+留出一些子类定制点以保证可扩展性、多样性。模板方法模式需要抽象类和具体子类协调完成：
+
+- 抽象类负责给出一个算法的轮廓和骨架；
+- 不同的、具体子类负责给出这个算法的各个逻辑步骤；
+
+将这些基本方法汇总起来的方法叫做模板方法，这个模板方法是在抽象类中以具体方法（非abstract）定义的
 
 [template_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/template)
 
