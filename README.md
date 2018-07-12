@@ -252,6 +252,10 @@ General Manager:Request{day=15, reason='出差'}
 
 适配器模式
 
+在计算机编程中，适配器模式（有时候也称包装样式或包装）将一个类的接口适配成用户所期待的。
+将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
+让老的系统适应新的系统。
+
 ![dp_adapter](https://github.com/cxmhfut/DesignPattern/blob/master/images/dp_adapter.png)
 
 [adapter_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/adapter)
@@ -267,6 +271,22 @@ Invalid audio type.
 
 桥接模式
 
+<h4>意图</h4>
+
+将抽象部分与它的实现部分分离，使它们都可以独立的变化
+
+<h4>适用性</h4>
+
+- 抽象和它的实现部分可以独立变化
+- 类的抽象以及它的实现都可以通过生成子类的方法加以扩充
+- 实现部分的修改不会对客户端产生影响
+
+<h4>使用桥接模式的效果</h4>
+
+- 当需求改变的时候，只需要简单添加几个类
+- 对原有代码不需要改动
+- 保证了代码的稳定，提高了可维护性
+
 [bridge_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/bridge)
 
 - 运行结果
@@ -278,5 +298,15 @@ Drawing Circle[color:green, radius:3, x:0, y:0]
 ## 11 Proxy模式
 
 代理模式
+
+代理模式的作用：为其他对象提供一种代理，以控制对这个对象的访问。在某些情况下，
+一个客户不想或者不能直接引用另一个对象，而代理对象可以在客户端和目标对象之间起到中介的作用。
+
+代理模式一般涉及三个角色：
+- 抽象角色：声明真实对象和代理对象的代理接口；
+- 代理角色：代理对象角色内部含有对真实对象的引用，从而可以操作真实对象，
+同时代理对象提供与真实对象相同的接口以便在任何时候都能代替真实对象。
+同时，代理对象可以在执行真实对象操作时，附加其他的操作，相当于对真实对象进行封装。
+- 真实角色（被代理者）：代理角色所代表的真实对象，是我们最终要引用的对象
 
 [proxy_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/proxy)
