@@ -310,3 +310,4 @@ Drawing Circle[color:green, radius:3, x:0, y:0]
 - 真实角色（被代理者）：代理角色所代表的真实对象，是我们最终要引用的对象
 
 [proxy_code](https://github.com/cxmhfut/DesignPattern/tree/master/src/dp/proxy)
+
